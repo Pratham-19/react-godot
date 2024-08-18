@@ -1,5 +1,5 @@
 {
-  "name": "react-godot",
+  "name": "react-godot-new",
   "version": "1.0.0",
   "description": "Load a webassembly build of the Godot engine and Bootstrap packed games from within the react component tree",
   "author": "d3dc",
@@ -15,15 +15,14 @@
   },
   "scripts": {
     "test": "react-scripts test",
-    "build": "NODE_ENV=production tsc",
-    "build:css": "cp src/styles.css dist/",
-    "start": "NODE_ENV=development tsc -w",
+    "build:css": "copy src\\styles.css dist\\",
+    "build": "cross-env NODE_ENV=production tsc",
+    "start": "cross-env NODE_ENV=development tsc -w",
     "prepare": "npm run build && npm run build:css",
     "predeploy": "cd example && npm install && npm run build"
   },
-  "dependencies": {},
   "peerDependencies": {
-  "react": "^18",
+    "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
@@ -33,6 +32,7 @@
     "@types/jest": "^24.0.25",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
+    "cross-env": "^7.0.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "typescript": "^3.7.4"
