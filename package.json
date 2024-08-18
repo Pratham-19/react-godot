@@ -23,8 +23,8 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+  "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
